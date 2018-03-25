@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ChannelViewItem" customModule="DouBanFM" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="NSTextView">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="17"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Iw-P0-k9K">
+                    <rect key="frame" x="0.0" y="0.0" width="399" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" focusRingType="none" alignment="left" title="Multiline Label" drawsBackground="YES" id="kGl-66-biu">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1Iw-P0-k9K" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="5pm-zH-hml"/>
+                <constraint firstAttribute="trailing" secondItem="1Iw-P0-k9K" secondAttribute="trailing" id="8kh-qR-ck7"/>
+                <constraint firstItem="1Iw-P0-k9K" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Ovs-51-f6e"/>
+                <constraint firstAttribute="bottom" secondItem="1Iw-P0-k9K" secondAttribute="bottom" id="yBr-Bv-pl5"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="286.5"/>
+        </customView>
+        <collectionViewItem id="I1s-qs-OsO" customClass="ChannelViewItem" customModule="DouBanFM" customModuleProvider="target">
+            <connections>
+                <outlet property="name" destination="1Iw-P0-k9K" id="qU3-R3-ATW"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="Rwu-zI-X9F"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+</document>
