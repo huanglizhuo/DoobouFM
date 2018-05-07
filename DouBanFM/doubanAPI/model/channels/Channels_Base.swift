@@ -13,7 +13,7 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 
 import Foundation
 struct Channels_Base : Codable {
-	let groups : [Groups]?
+	var groups : [Groups]?
 
 	enum CodingKeys: String, CodingKey {
 

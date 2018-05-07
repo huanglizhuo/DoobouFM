@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (4.7.0)
-  - Kingfisher (4.6.3)
+  - Alamofire (4.7.2)
+  - Kingfisher (4.7.0)
   - StreamingKit (0.1.30)
 
 DEPENDENCIES:
@@ -9,10 +9,10 @@ DEPENDENCIES:
   - StreamingKit
 
 SPEC CHECKSUMS:
-  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
-  Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
   StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
 
-PODFILE CHECKSUM: 5a8d3f32137776fd523f69bcf6d740366a4c0d5d
+PODFILE CHECKSUM: d3cd7dc58be01e8f47b0d77ad393e0e86e6bb39a
 
 COCOAPODS: 1.4.0

@@ -9,23 +9,46 @@
 import Foundation
 import StreamingKit
 import Kingfisher
+
+protocol MusicProgressDelegate:NSObjectProtocol{
+    func updateProgress(incresment:Double,duration:Double)
+}
 class MusicPlayer {
     let audioPlayer:STKAudioPlayer = STKAudioPlayer()
     var index=0
-    var channelId=1
+    weak var delegate:MusicProgressDelegate?
+    var channelId=17
     var playlist:Playlist_Base?
     var albumImageView: NSImageView?
+    var songTitle:NSTextField?
+    var playing:Bool
     var title: NSTextField?
-    init(channelId:Int=1){
+    let preferences = UserDefaults.standard
+    let channelIDKey = "channelID"
+    init(){
         self.index=0
-        self.channelId = channelId
+        self.playing=false
+        if preferences.object(forKey: channelIDKey) == nil {
+            self.channelId=17
+        } else {
+            self.channelId = preferences.integer(forKey: channelIDKey)
+            print("last channelid",channelId)
+        }
         resetChannelId(channelId: channelId)
         let timer=Timer.scheduledTimer(timeInterval: 0.1, target: self,
                                        selector: #selector(tick), userInfo: nil, repeats: true)
+        initChannel();
+    }
+    func initChannel(){
+        
     }
     func setImageVIew(albumImageView:NSImageView){
         self.albumImageView=albumImageView
     }
+    func setSongTitle(songTitle:NSTextField){
+        self.songTitle=songTitle
+    }
+    
     func setTitle(title: NSTextField){
         self.title=title
     }
@@ -36,19 +59,27 @@ class MusicPlayer {
         if self.audioPlayer.progress==0{
             self.playNextSong()
         }
+        delegate?.updateProgress(incresment: 0.1,duration:audioPlayer.duration)
     }
     func pauseSong(){
+        self.playing=false
         self.audioPlayer.pause()
     }
     func playSong(){
+        self.playing=true
         self.audioPlayer.resume()
     }
     func playNextSong(){
+        if playlist?.song?.count==0 {
+            refreshList()
+            return
+        }
         if let songs=playlist?.song{
+            self.playing=true
             self.audioPlayer.play(songs[index%songs.count].url!)
             let url = URL(string: (songs[index%songs.count].picture)!)!
-            print (url)
             self.albumImageView?.kf.setImage(with: url)
+            self.songTitle?.stringValue=songs[index%songs.count].title!
             self.index+=1
             self.index=self.index%songs.count
             if index==songs.count-1{
@@ -68,6 +99,9 @@ class MusicPlayer {
         }
     }
     func resetChannelId(channelId:Int=1){
+        preferences.set(channelId, forKey: channelIDKey)
+        preferences.synchronize()
+        print("last channelid",channelId)
         self.channelId=channelId
         self.audioPlayer.stop()
         self.audioPlayer.clearQueue()

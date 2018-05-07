@@ -10,17 +10,14 @@
 		228087B7384077EB8E395035 /* Pods_DouBanFMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7262A82FC50F5F99EE29770 /* Pods_DouBanFMUITests.framework */; };
 		2D330BF7CC38129C53D2F6E5 /* Pods_DouBanFMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831D2D704E9CDA66961D610D /* Pods_DouBanFMTests.framework */; };
 		9EF4EE00E1A9EE55D8BFCC25 /* Pods_DouBanFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9917D88A04B674BDF2CE03 /* Pods_DouBanFM.framework */; };
-		B08AE4282066CD2F004158F2 /* ChannelViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08AE4262066CD2F004158F2 /* ChannelViewItem.xib */; };
-		B08AE4292066CD2F004158F2 /* ChannelViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08AE4272066CD2F004158F2 /* ChannelViewItem.swift */; };
-		B08AE42C206755CF004158F2 /* ChannelCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08AE42B206755CF004158F2 /* ChannelCollectionView.swift */; };
+		B052E35B209EF5A00017C859 /* ChannelItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B052E359209EF5A00017C859 /* ChannelItem.xib */; };
+		B052E35C209EF5A00017C859 /* ChannelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052E35A209EF5A00017C859 /* ChannelItem.swift */; };
 		B08AE42E2067905B004158F2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08AE42D2067905B004158F2 /* GradientView.swift */; };
 		B08AE4302067E461004158F2 /* GroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08AE42F2067E461004158F2 /* GroupHeaderView.swift */; };
 		B08AE4322067E4AB004158F2 /* GroupHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08AE4312067E4AB004158F2 /* GroupHeaderView.xib */; };
 		B096E376205FFB2C00AA0A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096E375205FFB2C00AA0A5B /* AppDelegate.swift */; };
 		B096E378205FFB2C00AA0A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096E377205FFB2C00AA0A5B /* ViewController.swift */; };
 		B096E37D205FFB2C00AA0A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B096E37B205FFB2C00AA0A5B /* Main.storyboard */; };
-		B096E389205FFB2C00AA0A5B /* DouBanFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096E388205FFB2C00AA0A5B /* DouBanFMTests.swift */; };
-		B096E394205FFB2C00AA0A5B /* DouBanFMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096E393205FFB2C00AA0A5B /* DouBanFMUITests.swift */; };
 		B096E3A420603FE200AA0A5B /* DouBan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096E3A320603FE200AA0A5B /* DouBan.swift */; };
 		B096E3B5206145C600AA0A5B /* Chls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096E3B1206145C600AA0A5B /* Chls.swift */; };
 		B096E3B6206145C600AA0A5B /* Channels_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096E3B2206145C600AA0A5B /* Channels_Base.swift */; };
@@ -35,6 +32,7 @@
 		B096E3C920614EE200AA0A5B /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096E3C820614EE200AA0A5B /* MainWindowController.swift */; };
 		B096E3CB206173C100AA0A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B096E3CA206173C100AA0A5B /* Assets.xcassets */; };
 		B096E3D22061E76D00AA0A5B /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096E3D12061E76D00AA0A5B /* MusicPlayer.swift */; };
+		B0BCEDD4206FE72100545958 /* MediaApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BCEDD3206FE72100545958 /* MediaApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +58,8 @@
 		831D2D704E9CDA66961D610D /* Pods_DouBanFMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouBanFMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC433F92AB6BB1953CA27DA /* Pods-DouBanFMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanFMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouBanFMUITests/Pods-DouBanFMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A35ACDFD26EA7AFF1186113E /* Pods-DouBanFMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanFMUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouBanFMUITests/Pods-DouBanFMUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B08AE4262066CD2F004158F2 /* ChannelViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelViewItem.xib; sourceTree = "<group>"; };
-		B08AE4272066CD2F004158F2 /* ChannelViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewItem.swift; sourceTree = "<group>"; };
-		B08AE42B206755CF004158F2 /* ChannelCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCollectionView.swift; sourceTree = "<group>"; };
+		B052E359209EF5A00017C859 /* ChannelItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelItem.xib; sourceTree = "<group>"; };
+		B052E35A209EF5A00017C859 /* ChannelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelItem.swift; sourceTree = "<group>"; };
 		B08AE42D2067905B004158F2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B08AE42F2067E461004158F2 /* GroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
 		B08AE4312067E4AB004158F2 /* GroupHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupHeaderView.xib; sourceTree = "<group>"; };
@@ -73,12 +70,7 @@
 		B096E37E205FFB2C00AA0A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B096E37F205FFB2C00AA0A5B /* DouBanFM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DouBanFM.entitlements; sourceTree = "<group>"; };
 		B096E384205FFB2C00AA0A5B /* DouBanFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouBanFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B096E388205FFB2C00AA0A5B /* DouBanFMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouBanFMTests.swift; sourceTree = "<group>"; };
-		B096E38A205FFB2C00AA0A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B096E38F205FFB2C00AA0A5B /* DouBanFMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouBanFMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B096E393205FFB2C00AA0A5B /* DouBanFMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouBanFMUITests.swift; sourceTree = "<group>"; };
-		B096E395205FFB2C00AA0A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B096E3A12060229800AA0A5B /* DoBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoBridgingHeader.h; sourceTree = "<group>"; };
 		B096E3A320603FE200AA0A5B /* DouBan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouBan.swift; sourceTree = "<group>"; };
 		B096E3B1206145C600AA0A5B /* Chls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chls.swift; sourceTree = "<group>"; };
 		B096E3B2206145C600AA0A5B /* Channels_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channels_Base.swift; sourceTree = "<group>"; };
@@ -93,6 +85,7 @@
 		B096E3C820614EE200AA0A5B /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		B096E3CA206173C100AA0A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B096E3D12061E76D00AA0A5B /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		B0BCEDD3206FE72100545958 /* MediaApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaApplication.swift; sourceTree = "<group>"; };
 		C091F14E17A8B58F2E73476C /* Pods-DouBanFMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanFMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouBanFMTests/Pods-DouBanFMTests.release.xcconfig"; sourceTree = "<group>"; };
 		C2D476F2D0F3D0415C739B3F /* Pods-DouBanFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouBanFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouBanFM/Pods-DouBanFM.release.xcconfig"; sourceTree = "<group>"; };
 		CC9917D88A04B674BDF2CE03 /* Pods_DouBanFM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouBanFM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,10 +146,9 @@
 		B08AE4252066CCE6004158F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B08AE4272066CD2F004158F2 /* ChannelViewItem.swift */,
-				B08AE42B206755CF004158F2 /* ChannelCollectionView.swift */,
 				B08AE42D2067905B004158F2 /* GradientView.swift */,
 				B08AE42F2067E461004158F2 /* GroupHeaderView.swift */,
+				B052E35A209EF5A00017C859 /* ChannelItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				B096E37B205FFB2C00AA0A5B /* Main.storyboard */,
-				B08AE4262066CD2F004158F2 /* ChannelViewItem.xib */,
+				B052E359209EF5A00017C859 /* ChannelItem.xib */,
 				B08AE4312067E4AB004158F2 /* GroupHeaderView.xib */,
 			);
 			path = Resources;
@@ -175,8 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				B096E374205FFB2C00AA0A5B /* DouBanFM */,
-				B096E387205FFB2C00AA0A5B /* DouBanFMTests */,
-				B096E392205FFB2C00AA0A5B /* DouBanFMUITests */,
 				B096E373205FFB2C00AA0A5B /* Products */,
 				4B47914F9C51FCE63AAA7566 /* Pods */,
 				1F60CCC4F44B516B62057E14 /* Frameworks */,
@@ -204,29 +194,11 @@
 				B096E3D12061E76D00AA0A5B /* MusicPlayer.swift */,
 				B096E3C820614EE200AA0A5B /* MainWindowController.swift */,
 				B096E377205FFB2C00AA0A5B /* ViewController.swift */,
-				B096E3A12060229800AA0A5B /* DoBridgingHeader.h */,
 				B096E37E205FFB2C00AA0A5B /* Info.plist */,
 				B096E37F205FFB2C00AA0A5B /* DouBanFM.entitlements */,
+				B0BCEDD3206FE72100545958 /* MediaApplication.swift */,
 			);
 			path = DouBanFM;
-			sourceTree = "<group>";
-		};
-		B096E387205FFB2C00AA0A5B /* DouBanFMTests */ = {
-			isa = PBXGroup;
-			children = (
-				B096E388205FFB2C00AA0A5B /* DouBanFMTests.swift */,
-				B096E38A205FFB2C00AA0A5B /* Info.plist */,
-			);
-			path = DouBanFMTests;
-			sourceTree = "<group>";
-		};
-		B096E392205FFB2C00AA0A5B /* DouBanFMUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B096E393205FFB2C00AA0A5B /* DouBanFMUITests.swift */,
-				B096E395205FFB2C00AA0A5B /* Info.plist */,
-			);
-			path = DouBanFMUITests;
 			sourceTree = "<group>";
 		};
 		B096E3A220603FCD00AA0A5B /* doubanAPI */ = {
@@ -388,8 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08AE4322067E4AB004158F2 /* GroupHeaderView.xib in Resources */,
+				B052E35B209EF5A00017C859 /* ChannelItem.xib in Resources */,
 				B096E3CB206173C100AA0A5B /* Assets.xcassets in Resources */,
-				B08AE4282066CD2F004158F2 /* ChannelViewItem.xib in Resources */,
 				B096E37D205FFB2C00AA0A5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,8 +544,9 @@
 				B096E3C22061461000AA0A5B /* All_play_sources.swift in Sources */,
 				B096E3C42061461000AA0A5B /* Release.swift in Sources */,
 				B096E3C12061461000AA0A5B /* Song.swift in Sources */,
-				B08AE4292066CD2F004158F2 /* ChannelViewItem.swift in Sources */,
+				B052E35C209EF5A00017C859 /* ChannelItem.swift in Sources */,
 				B096E3C52061461000AA0A5B /* Singers.swift in Sources */,
+				B0BCEDD4206FE72100545958 /* MediaApplication.swift in Sources */,
 				B096E378205FFB2C00AA0A5B /* ViewController.swift in Sources */,
 				B096E3A420603FE200AA0A5B /* DouBan.swift in Sources */,
 				B096E3B8206145C600AA0A5B /* Groups.swift in Sources */,
@@ -587,7 +560,6 @@
 				B096E3C02061461000AA0A5B /* Playlist_Base.swift in Sources */,
 				B096E3B5206145C600AA0A5B /* Chls.swift in Sources */,
 				B096E3B7206145C600AA0A5B /* Style.swift in Sources */,
-				B08AE42C206755CF004158F2 /* ChannelCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,7 +567,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B096E389205FFB2C00AA0A5B /* DouBanFMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +574,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B096E394205FFB2C00AA0A5B /* DouBanFMUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,7 +723,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lizhuo.huang.DouBanFM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = DouBanFM/DoBridgingHeader.h;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -771,7 +743,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lizhuo.huang.DouBanFM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = DouBanFM/DoBridgingHeader.h;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

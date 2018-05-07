@@ -7,7 +7,6 @@ target 'DouBanFM' do
   pod 'Alamofire', '~> 4.7'
   pod 'StreamingKit'
   pod 'Kingfisher', '~> 4.0'
-
   # Pods for DouBanFM
 
   target 'DouBanFMTests' do

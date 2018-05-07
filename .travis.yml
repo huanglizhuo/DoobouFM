@@ -1,0 +1,5 @@
+language: swift # or objective-c
+podfile: ./Podfile
+osx_image: xcode9
+script:
+after_success:
