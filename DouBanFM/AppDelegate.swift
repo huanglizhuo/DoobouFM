@@ -20,5 +20,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
+    @IBAction func viewInGuthub(_ sender: Any) {
+        NSWorkspace.shared.open(URL.init(string: "https://github.com/huanglizhuo/DoobouFM")!)
+    }
 }
 
