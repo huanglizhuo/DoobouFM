@@ -1,9 +1,11 @@
 # DooBou
 
 A Douban FM mac client with simple UI
+<div  align="left">    
+ <img src="./screenshot.png" width = "470" height = "300" alt="图片名称" align=center />
+</div>
 
-![doobou](./screenshot.png)
-
+ 
 I just want a simply app that can play random music 
 
 So I made the DooBou
