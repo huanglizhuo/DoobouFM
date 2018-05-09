@@ -17,9 +17,9 @@ class GradientView: NSView {
     }
 }
 
-extension NSColor{
-    func RGB2NSColor(r:CGFloat, g:CGFloat, b:CGFloat, alpha:CGFloat? = 1) ->NSColor{
-        return NSColor(red: r/255, green: g/255, blue: b/255, alpha: alpha!)
-    }
-}
+//extension NSColor{
+//    func RGB2NSColor(r:CGFloat, g:CGFloat, b:CGFloat, alpha:CGFloat? = 1) ->NSColor{
+//        return NSColor(red: r/255, green: g/255, blue: b/255, alpha: alpha!)
+//    }
+//}
 

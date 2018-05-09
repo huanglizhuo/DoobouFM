@@ -20,12 +20,13 @@ class ChannelItem: NSCollectionViewItem {
 //        blurView.frame = imageView.bounds
 //        imageView?.addSubview(blurView)
         imageView?.wantsLayer=true
-        imageView?.layer?.cornerRadius=2
+        imageView?.layer?.cornerRadius=3
         imageView?.layer?.backgroundColor=NSColor(deviceRed:1, green:1, blue:1, alpha:0.50).cgColor
+//        NSColor(deviceRed:0.3764, green:0.4705, blue:0.9176).cgColor
     }
     override var isSelected: Bool {
         didSet {
-            imageView?.layer?.backgroundColor = isSelected ? NSColor.green.cgColor : NSColor(deviceRed:1, green:1, blue:1, alpha:0.50).cgColor
+            changeBackGround(imageView: self.imageView!, isSelected: isSelected)
             if isSelected{
                 print(chls!.name)
                 if delegate != nil{
@@ -33,6 +34,17 @@ class ChannelItem: NSCollectionViewItem {
                 }
             }
         }
+    }
+    func changeBackGround(imageView:NSImageView,isSelected:Bool){
+        if isSelected {
+            imageView.layer?.backgroundColor = NSColor(deviceRed:0.3764, green:0.4705, blue:0.9176,alpha:0.8).cgColor
+            self.textField?.textColor = NSColor(deviceRed:1, green:1, blue:1,alpha:1)
+        }else{
+            imageView.layer?.backgroundColor = NSColor(deviceRed:1, green:1, blue:1, alpha:0.50).cgColor
+            self.textField?.textColor = NSColor(deviceRed:0, green:0, blue:0,alpha:1)
+            imageView.layer?.borderWidth=0
+        }
+        
     }
     var chls: Chls? {
         didSet {

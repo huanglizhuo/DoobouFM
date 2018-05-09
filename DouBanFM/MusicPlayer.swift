@@ -18,7 +18,14 @@ class MusicPlayer {
     var index=0
     weak var delegate:MusicProgressDelegate?
     var channelId=17
-    var playlist:Playlist_Base?
+    var playlist:Playlist_Base?{
+        didSet {
+            if playlist?.song?.count==0 {
+                refreshList()
+                //avoid playlist songs equal zero 
+            }
+        }
+    }
     var albumImageView: NSImageView?
     var songTitle:NSTextField?
     var playing:Bool
