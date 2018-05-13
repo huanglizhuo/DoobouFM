@@ -15,20 +15,14 @@ class ChannelItem: NSCollectionViewItem {
     weak var delegate:ClickDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let blurEffect = NSBlurEffect(style: NSBlurEffectStyle.Light)
-//        let blurView = NSVisualEffectView(effect: blurEffect)
-//        blurView.frame = imageView.bounds
-//        imageView?.addSubview(blurView)
         imageView?.wantsLayer=true
         imageView?.layer?.cornerRadius=3
         imageView?.layer?.backgroundColor=NSColor(deviceRed:1, green:1, blue:1, alpha:0.50).cgColor
-//        NSColor(deviceRed:0.3764, green:0.4705, blue:0.9176).cgColor
     }
     override var isSelected: Bool {
         didSet {
             changeBackGround(imageView: self.imageView!, isSelected: isSelected)
             if isSelected{
-                print(chls!.name)
                 if delegate != nil{
                     delegate?.changeChannel(id:(chls?.id)!)
                 }
@@ -48,7 +42,6 @@ class ChannelItem: NSCollectionViewItem {
     }
     var chls: Chls? {
         didSet {
-            print(chls?.name,chls?.id)
             guard isViewLoaded else { return }
             if let chls = chls {
                 textField?.stringValue = chls.name!

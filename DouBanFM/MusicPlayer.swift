@@ -14,6 +14,8 @@ protocol MusicProgressDelegate:NSObjectProtocol{
     func updateProgress(incresment:Double,duration:Double)
 }
 class MusicPlayer {
+    static let sharedMusicInstance = MusicPlayer()
+    
     let audioPlayer:STKAudioPlayer = STKAudioPlayer()
     var index=0
     weak var delegate:MusicProgressDelegate?
@@ -32,14 +34,13 @@ class MusicPlayer {
     var title: NSTextField?
     let preferences = UserDefaults.standard
     let channelIDKey = "channelID"
-    init(){
+    private init(){
         self.index=0
         self.playing=false
         if preferences.object(forKey: channelIDKey) == nil {
             self.channelId=17
         } else {
             self.channelId = preferences.integer(forKey: channelIDKey)
-            print("last channelid",channelId)
         }
         resetChannelId(channelId: channelId)
         let timer=Timer.scheduledTimer(timeInterval: 0.1, target: self,
@@ -108,7 +109,6 @@ class MusicPlayer {
     func resetChannelId(channelId:Int=1){
         preferences.set(channelId, forKey: channelIDKey)
         preferences.synchronize()
-        print("last channelid",channelId)
         self.channelId=channelId
         self.audioPlayer.stop()
         self.audioPlayer.clearQueue()

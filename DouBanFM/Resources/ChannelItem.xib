@@ -25,7 +25,7 @@
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wh4-o6-TDs">
                     <rect key="frame" x="-2" y="35" width="517" height="16"/>
                     <textFieldCell key="cell" controlSize="mini" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="5mq-YG-iH9">
-                        <font key="font" metaFont="system" size="12"/>
+                        <font key="font" metaFont="cellTitle"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -43,5 +43,6 @@
             <point key="canvasLocation" x="-105.5" y="258"/>
         </customView>
         <collectionViewItem id="F0I-IE-Rvp" customClass="ChannelItem" customModule="DouBanFM" customModuleProvider="target"/>
+        <customFormatter id="KKE-tk-7ok"/>
     </objects>
 </document>

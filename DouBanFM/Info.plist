@@ -41,6 +41,8 @@
 	<string>Copyright © 2018 lizhuo. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
+	<key>LSUIElement</key>
+	<false/>
 	<key>NSPrincipalClass</key>
 	<string>MediaApplication</string>
 </dict>

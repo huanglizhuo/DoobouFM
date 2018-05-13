@@ -21,14 +21,6 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
-                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
-                                        <menuItem title="Services" id="NMo-om-nkz">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
                                         <menuItem title="Hide DouBanFM" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
@@ -112,20 +104,6 @@
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="myS-Hk-Xa2" customClass="GradientView" customModule="DouBanFM" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="372" height="230"/>
                                 <subviews>
-                                    <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XjA-Js-Ra6">
-                                        <rect key="frame" x="22" y="175" width="140" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="38n-Vw-M5z"/>
-                                    </imageView>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2r-Sp-5xl">
-                                        <rect key="frame" x="20" y="174" width="140" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="name of song" id="JZl-hd-cK2">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="shadowColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
                                     <scrollView wantsLayer="YES" fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO7-gG-zcU">
                                         <rect key="frame" x="184" y="8" width="177" height="194"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -153,37 +131,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
-                                    <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="nKQ-fq-RVU">
-                                        <rect key="frame" x="20" y="157" width="140" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    </progressIndicator>
-                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l1w-py-uIF">
-                                        <rect key="frame" x="54" y="133" width="28" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="play" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fNO-fT-08m">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="pauseOrPlayClick:" target="XfG-lQ-9wD" id="QTn-F8-L9h"/>
-                                        </connections>
-                                    </button>
-                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kr7-nk-ksf">
-                                        <rect key="frame" x="90" y="133" width="27" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="next" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="DBN-ME-gOe">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="nextClick:" target="XfG-lQ-9wD" id="eTh-Bo-Rgt"/>
-                                        </connections>
-                                    </button>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4O-wt-3PR">
                                         <rect key="frame" x="28" y="15" width="111" height="111"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="DefaultAlbum" id="8wY-wc-LU0"/>
                                     </imageView>
+                                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CsO-Wq-SX1" customClass="MusicPlayerView" customModule="DouBanFM" customModuleProvider="target">
+                                        <rect key="frame" x="13" y="127" width="163" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </customView>
                                 </subviews>
                             </customView>
                         </subviews>
@@ -196,11 +152,9 @@
                     </view>
                     <connections>
                         <outlet property="albumImageView" destination="n4O-wt-3PR" id="yqU-je-mM6"/>
+                        <outlet property="albumView" destination="n4O-wt-3PR" id="pKx-DN-0Xy"/>
                         <outlet property="channelCollection" destination="Ro0-3i-64m" id="zE9-gA-rAA"/>
-                        <outlet property="musicProgressBar" destination="nKQ-fq-RVU" id="W3v-H3-Fnx"/>
-                        <outlet property="playOrpause" destination="l1w-py-uIF" id="6iQ-11-HnQ"/>
-                        <outlet property="songNameBG" destination="XjA-Js-Ra6" id="nc2-Wt-W2h"/>
-                        <outlet property="songTitle" destination="w2r-Sp-5xl" id="JSv-1Q-kHv"/>
+                        <outlet property="musicPlayerView" destination="CsO-Wq-SX1" id="yVA-0G-csT"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -210,7 +164,5 @@
     </scenes>
     <resources>
         <image name="DefaultAlbum" width="153.60000610351562" height="153.60000610351562"/>
-        <image name="next" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="play" width="25.600000381469727" height="25.600000381469727"/>
     </resources>
 </document>

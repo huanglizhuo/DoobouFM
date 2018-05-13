@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MusicPlayerView" customModule="DouBanFM" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="VzY-nL-XwF" id="NkT-EV-cn6"/>
+                <outlet property="nextButton" destination="eIj-fE-hpV" id="89v-0f-hNT"/>
+                <outlet property="playButton" destination="emj-eu-e0v" id="6cN-4A-41b"/>
+                <outlet property="songNameBg" destination="S64-fW-J1Y" id="qDf-4K-zbp"/>
+                <outlet property="songProgressBar" destination="ZxK-Qh-10e" id="pA6-W9-7Ik"/>
+                <outlet property="songTitle" destination="VAF-ks-TZn" id="VkO-h5-u9K"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="VzY-nL-XwF">
+            <rect key="frame" x="0.0" y="0.0" width="148" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAF-ks-TZn">
+                    <rect key="frame" x="0.0" y="49" width="140" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="name of song" id="cOZ-1c-n3g">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="shadowColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emj-eu-e0v">
+                    <rect key="frame" x="39" y="7" width="28" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="play" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VfH-Sa-McV">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="playOrPauseClick:" target="-2" id="1C6-mL-Dn7"/>
+                    </connections>
+                </button>
+                <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S64-fW-J1Y">
+                    <rect key="frame" x="2" y="50" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="CxX-rq-OWx"/>
+                </imageView>
+                <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="ZxK-Qh-10e">
+                    <rect key="frame" x="4" y="32" width="140" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </progressIndicator>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eIj-fE-hpV">
+                    <rect key="frame" x="75" y="8" width="27" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="next" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="rDV-cH-5tO">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="nextClick:" target="-2" id="qcd-Md-oY0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="219" y="-34"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="next" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="play" width="25.600000381469727" height="25.600000381469727"/>
+    </resources>
+</document>

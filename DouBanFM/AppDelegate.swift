@@ -10,8 +10,19 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    let popover = NSPopover()
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        let icon = NSImage(named:NSImage.Name("statusIcon"))
+        icon?.isTemplate = true
+        statusItem.image = icon
+//        if let button = statusItem.button {
+//            button.action = #selector(printQuote(_:))
+//        }        
+//        let menu = NSMenu()
+//        menu.addItem(NSMenuItem(title: "Print Quote", action: #selector(AppDelegate.printQuote(_:)), keyEquivalent: "P"))
+//        statusItem.menu = menu
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {

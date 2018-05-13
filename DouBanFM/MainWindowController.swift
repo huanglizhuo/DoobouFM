@@ -16,7 +16,6 @@ class MainWindowController: NSWindowController {
             button?.isHidden = true
             window.titleVisibility = .hidden
             window.titlebarAppearsTransparent = true
-//            window.title="hello"
             window.styleMask.remove([.resizable])
         }
     }
