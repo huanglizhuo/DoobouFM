@@ -17,7 +17,7 @@ class ChannelItem: NSCollectionViewItem {
         super.viewDidLoad()
         imageView?.wantsLayer=true
         imageView?.layer?.cornerRadius=3
-        imageView?.layer?.backgroundColor=NSColor(deviceRed:1, green:1, blue:1, alpha:0.50).cgColor
+        imageView?.layer?.backgroundColor=NSColor(deviceRed:1, green:1, blue:1, alpha:0.30).cgColor
     }
     override var isSelected: Bool {
         didSet {
